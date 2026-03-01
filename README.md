@@ -4,7 +4,7 @@
 ---
 
 ## [?] Project Overview
-This repository contains all normalization process and SQL implementation for a college club membership system. This project demonstrates the transition from a 'Flat-File' data structure to a fully optimized **Third Normal Form 3NF** relational database.
+This repository contains all normalization process and SQL implementation for a college club membership system. This project demonstrates the transition from a ``Flat-File`` data structure to a fully optimized **Third Normal Form 3NF** relational database.
 
 ---
 
@@ -27,8 +27,8 @@ cd ST4015CMD
 ## [?] Database Design/Normalization
 Initially, the data were stored in a single table, creative massive redundancy and inconsistency. To resolve this issue, different normalization steps are used:
 - 1NF: Ensures atomic values and defines a unique primary key.
-- 2NF: Revmoes partial dependencies by separating 'Student' table info from 'Club' table.
-- 3NF: Transitive dependencies are removed, ensuring 'ClubMentor' and 'ClubRoom' depend solely on the 'ClubID'.
+- 2NF: Revmoes partial dependencies by separating ``Student`` table info from ``Club`` table.
+- 3NF: Transitive dependencies are removed, ensuring ``ClubMentor`` and ``ClubRoom`` depend solely on the ``ClubID``.
 
 ---
 
