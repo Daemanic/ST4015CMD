@@ -1,5 +1,5 @@
 # College Club Membership Management
-### Module: ST4015CMD - Foundation of Computer Science
+### ST4015CMD - Foundation of Computer Science
 
 ---
 
