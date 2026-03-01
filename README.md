@@ -32,6 +32,11 @@ Initially, the data were stored in a single table, creative massive redundancy a
 
 ---
 
+## [?] Expected Output
+After following through the repository cloning and running the SQL file, the system will output a clean, joined list of student memberships demonstrating how data can be stored separately for efficiency.
+
+---
+
 ## [?] Entity Relationship Diagram
 Note: This image is generated through the raw DBdiagram.io code available in ``dbio.txt``.
 
