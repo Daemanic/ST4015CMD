@@ -1,0 +1,25 @@
+// By: Aditya Shrestha - 250498
+// ST4015CMD - Foundation of Computer Science
+// Lecturer: Rupak Rajbanshi
+Table Student {
+  StudentID int [pk]
+  StudentName varchar
+  Email varchar
+}
+
+Table Club {
+  ClubID int [pk, increment]
+  ClubName varchar
+  ClubRoom varchar
+  ClubMentor varchar 
+}
+
+Table Membership {
+  StudentID int [ref: > Student.StudentID]
+  ClubID int [ref: > Club.ClubID]
+  JoinDate date
+  
+  indexes {
+    (StudentID, ClubID) [pk]
+  }
+}
