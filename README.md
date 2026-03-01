@@ -25,6 +25,7 @@ cd ST4015CMD
 ---
 
 ## Entity Relationship Diagram
-Note: This image is generated through the raw DBdiagram.io code available in [dbdio.txt[(./dbdio.txt)
+Note: This image is generated through the raw DBdiagram.io code available in ``dbio.txt``.
 
-<img width="512" height="317" alt="image" src="https://github.com/user-attachments/assets/7bcb18c3-eea9-4cbc-9d90-f863c48d0f79" />
+<img width="485" height="333" alt="image" src="https://github.com/user-attachments/assets/0ddda0fd-e3c4-4cd7-a1a7-f11c6c0cf597" />
+
