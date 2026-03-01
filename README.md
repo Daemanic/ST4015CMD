@@ -1,5 +1,5 @@
 # College Club Membership Management
-### ST4015CMD - Foundation of Computer Science
+### Module: ST4015CMD - Foundation of Computer Science
 
 ---
 
@@ -9,7 +9,7 @@ This repository contains all normalization process and SQL implementation for a 
 ---
 
 ## [?] Getting Started
-**Requirements:**<br>
+**Dependencies required:**<br>
 - A SQL Databse engine (eg; MySQL, PostgreSQL or SQLite)
 - A database client (eg; MySQL Workbench or Command Line)
 
