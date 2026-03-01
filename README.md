@@ -21,3 +21,8 @@ Run the following command to install this project locally and navigating to the 
 git clone https://github.com/Daemanic/ST4015CMD.git
 cd ST4015CMD
 ```
+
+---
+
+## Entity Relationship Diagram
+Note: This image is generated through the raw DBdiagram.io code available in
