@@ -46,8 +46,10 @@ docker exec -it club-database mysql -u root -p clubdb -e "source /3NF_club.sql"
 Initially, the data were stored in a single table, creative massive redundancy and inconsistency. To resolve this issue, different normalization steps are used:
 - **1NF:**<br>
   - Ensures atomic values and defines a unique primary key.
-- 2NF: Revmoes partial dependencies by separating ``Student`` table info from ``Club`` table.
-- 3NF: Transitive dependencies are removed, ensuring ``ClubMentor`` and ``ClubRoom`` depend solely on the ``ClubID``.
+- **2NF:**<br>
+  - Revmoes partial dependencies by separating ``Student`` table info from ``Club`` table.
+- **3NF:**<br>
+  - Transitive dependencies are removed, ensuring ``ClubMentor`` and ``ClubRoom`` depend solely on the ``ClubID``.
 
 ---
 
