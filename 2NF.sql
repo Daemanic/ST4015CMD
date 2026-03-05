@@ -17,6 +17,15 @@ CREATE TABLE Club (
   FOREIGN KEY (StudentID) REFERENCES Student(StudentID)
 );
 
+CREATE TABLE Membership (
+  StudentID INT,
+  ClubID INT,
+  JoinDate DATE,
+  PRIMARY KEY (StudentID, ClubID),
+  FOREIGN KEY (StudentID) REFERENCES Student(StudentID),
+  FOREIGN KEY (ClubID) REFERENCES Club(ClubID)
+);
+
 INSERT INTO Student 
 VALUES (1, 'Asha', 'asha@email.com'), (2, 'Bikash', 'bikash@email.com'),
   (3, 'Nisha', 'nisha@email.com'), (4, 'Rohan', 'rohan@email.com'),
@@ -29,3 +38,8 @@ VALUES (1, 'Music Club', 'R101', 'Mr. Raman', '1/10/2024'),
   (1, 'Sports Club', 'R202', 'Ms. Sita', '1/15/2024'),
   (3, 'Music Club', 'R101', 'Mr. Raman', '1/20/2024'),
   (4, 'Drama Club', 'R303', 'Mr. Kiran', '1/18/2024');
+
+INSERT INTO Membership (StudentID, ClubID, JoinDate)
+VALUES (1, 1, '2024-01-10'),
+       (1, 2, '2024-01-15'),
+       (2, 2, '2024-01-12');
