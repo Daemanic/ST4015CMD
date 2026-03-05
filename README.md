@@ -42,6 +42,67 @@ docker exec -it club-database mysql -u root -p clubdb -e "source /3NF_club.sql"
 
 ---
 
+## Flat-File Table
+```
++-----------+-------------+------------------+-------------+----------+------------+------------+
+| StudentID | StudentName | Email            | ClubName    | ClubRoom | ClubMentor | JoinDate   |
++-----------+-------------+------------------+-------------+----------+------------+------------+
+| 1         | Asha        | asha@email.com   | Music Club  | R101     | Mr. Raman  | 1/10/2024  |
+| 2         | Bikash      | bikash@email.com | Sports Club | R202     | Ms. Sita   | 1/12/2024  |
+| 1         | Asha        | asha@email.com   | Sports Club | R202     | Ms. Sita   | 1/15/2024  |
+| 3         | Nisha       | nisha@email.com  | Music Club  | R101     | Mr. Raman  | 1/20/2024  |
++-----------+-------------+------------------+-------------+----------+------------+------------+
+```
+
+## Normalized 3NF Table
+`` SELECT * FROM Student; ``
+```
++-----------+-------------+------------------+
+| StudentID | StudentName | Email            |
++-----------+-------------+------------------+
+| 1         | Asha        | asha@email.com   |
+| 2         | Bikash      | bikash@email.com |
+| 3         | Nisha       | nisha@email.com  |
+| 4         | Rohan       | rohan@email.com  |
+| 5         | Suman       | suman@email.com  |
+| 6         | Pooja       | pooja@email.com  |
+| 7         | Aman        | aman@email.com   |
++-----------+-------------+------------------+
+```
+`` SELECT * FROM Club; ``
+```
++-----------+-------------+------------------+
+| StudentID | StudentName | Email            |
++-----------+-------------+------------------+
+| 1         | Asha        | asha@email.com   |
+| 2         | Bikash      | bikash@email.com |
+| 3         | Nisha       | nisha@email.com  |
+| 4         | Rohan       | rohan@email.com  |
+| 5         | Suman       | suman@email.com  |
+| 6         | Pooja       | pooja@email.com  |
+| 7         | Aman        | aman@email.com   |
++-----------+-------------+------------------+
+```
+`` SELECT * FROM Membership ORDER BY JoinDate; ``
+```
++-----------+--------+------------+
+| StudentID | ClubID | JoinDate   |
++-----------+--------+------------+
+| 1         | 1      | 2024-10-01 |
+| 2         | 2      | 2024-12-01 |
+| 1         | 2      | 2024-01-15 |
+| 4         | 3      | 2024-01-18 |
+| 3         | 1      | 2024-01-20 |
+| 5         | 1      | 2024-01-22 |
+| 2         | 3      | 2024-01-25 |
+| 6         | 2      | 2024-01-27 |
+| 3         | 4      | 2024-01-28 |
+| 7         | 4      | 2024-01-30 |
++-----------+--------+------------+
+```
+
+---
+
 ## [?] Database Design/Normalization
 Initially, the data were stored in a single table, creative massive redundancy and inconsistency. To resolve this issue, different normalization steps are used:
 - **1NF:**<br>
