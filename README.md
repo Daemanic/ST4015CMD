@@ -42,7 +42,7 @@ docker exec -it club-database mysql -u root -p clubdb -e "source /3NF_club.sql"
 
 ---
 
-## Flat-File Table
+## [?] Flat-File Table
 ```
 +-----------+--------------+-------------------+-------------+----------+------------+------------+
 | StudentID | Student-Name | Email             | ClubName    | ClubRoom | ClubMentor | JoinDate   |
@@ -60,7 +60,7 @@ docker exec -it club-database mysql -u root -p clubdb -e "source /3NF_club.sql"
 +-----------+--------------+-------------------+-------------+----------+------------+------------+
 ```
 
-## Normalized 3NF Table
+## [?] Normalized 3NF Table
 SQL Command: `` SELECT * FROM Student; ``
 ```
 +-----------+-------------+------------------+
