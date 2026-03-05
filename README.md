@@ -127,12 +127,9 @@ After following through the repository cloning and running the SQL file, the sys
 
 ## [?] Entity Relationship Diagram
 Note: This image is generated through the raw DBdiagram.io code available in ``dbio.txt``.
+<img width="639" height="328" alt="image" src="https://github.com/user-attachments/assets/f37a10ac-dce3-4bfa-a36d-7b1038c6e14f" />
 
 ---
 
 ## 📨 Acknowledgement
 I would like to give credit to my lecturer **Rupak Rajbanshi** Sir for his guidance in this project made for module ST4015CMD - Foundation of Computer Science.
-
-<img width="639" height="328" alt="image" src="https://github.com/user-attachments/assets/f37a10ac-dce3-4bfa-a36d-7b1038c6e14f" />
-
-
