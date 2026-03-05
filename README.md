@@ -1,4 +1,4 @@
-<img width="814" height="337" alt="image" src="https://github.com/user-attachments/assets/2b65343e-43d5-45f5-b2d1-fb14db164657" /># 📄 College Club Membership Management
+# 📄 College Club Membership Management
 ### ST4015CMD - Foundation of Computer Science
 
 ---
