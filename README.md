@@ -55,7 +55,7 @@ docker exec -it club-database mysql -u root -p clubdb -e "source /3NF_club.sql"
 ```
 
 ## Normalized 3NF Table
-`` SELECT * FROM Student; ``
+SQL Command: `` SELECT * FROM Student; ``
 ```
 +-----------+-------------+------------------+
 | StudentID | StudentName | Email            |
@@ -69,7 +69,7 @@ docker exec -it club-database mysql -u root -p clubdb -e "source /3NF_club.sql"
 | 7         | Aman        | aman@email.com   |
 +-----------+-------------+------------------+
 ```
-`` SELECT * FROM Club; ``
+SQL Command: `` SELECT * FROM Club; ``
 ```
 +-----------+-------------+------------------+
 | StudentID | StudentName | Email            |
@@ -83,7 +83,7 @@ docker exec -it club-database mysql -u root -p clubdb -e "source /3NF_club.sql"
 | 7         | Aman        | aman@email.com   |
 +-----------+-------------+------------------+
 ```
-`` SELECT * FROM Membership ORDER BY JoinDate; ``
+SQL Command: `` SELECT * FROM Membership ORDER BY JoinDate; ``
 ```
 +-----------+--------+------------+
 | StudentID | ClubID | JoinDate   |
