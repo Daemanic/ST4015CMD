@@ -63,16 +63,16 @@ docker exec -it container mysql -u root -p070805 st4015cmd
 ```
 
 ## [?] Normalized 3NF Table
-Change Database: `` USE st4015cmd; ``
+Change Database: `` USE College3NF; ``
 Check for Table: `` SHOW TABLES; ``
 ```
-+---------------------+
-| Tables_in_st4015cmd |
-+---------------------+
-| Club                |
-| Membership          |
-| Student             |
-+---------------------+
++----------------------+
+| Tables_in_College3NF |
++----------------------+
+| Club                 |
+| Membership           |
+| Student              |
++----------------------+
 ```
 SQL Command: `` SELECT * FROM Student; ``
 ```
