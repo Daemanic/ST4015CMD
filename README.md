@@ -33,13 +33,12 @@ docker run -d --name container -v database:/var/lib/mysql -e MYSQL_ROOT_PASSWORD
 
 2. Import the database into the Container:
 ```bash
-docker exec -i container mysql -u root -p070805 -e "CREATE DATABASE IF NOT EXISTS st4015cmd;"
-docker exec -i container mysql -u root -p070805 st4015cmd < 3NF.sql
+docker exec -i container mysql -u root -p070805 < 3NF.sql
 ```
 
 3. Executing the SQL Container:
 ```bash
-docker exec -it container mysql -u root -p070805 st4015cmd
+docker exec -it container mysql -u root -p070805
 ```
 
 ---
@@ -79,44 +78,28 @@ SQL Command: `` SELECT * FROM Student; ``
 +-----------+-------------+------------------+
 | StudentID | StudentName | Email            |
 +-----------+-------------+------------------+
-| 1         | Asha        | asha@email.com   |
-| 2         | Bikash      | bikash@email.com |
-| 3         | Nisha       | nisha@email.com  |
-| 4         | Rohan       | rohan@email.com  |
-| 5         | Suman       | suman@email.com  |
-| 6         | Pooja       | pooja@email.com  |
-| 7         | Aman        | aman@email.com   |
+|         1 | Asha        | asha@email.com   |
+|         2 | Bikash      | bikash@email.com |
+|         3 | Nisha       | nisha@email.com  |
 +-----------+-------------+------------------+
 ```
 SQL Command: `` SELECT * FROM Club; ``
 ```
-+-----------+-------------+------------------+
-| StudentID | StudentName | Email            |
-+-----------+-------------+------------------+
-| 1         | Asha        | asha@email.com   |
-| 2         | Bikash      | bikash@email.com |
-| 3         | Nisha       | nisha@email.com  |
-| 4         | Rohan       | rohan@email.com  |
-| 5         | Suman       | suman@email.com  |
-| 6         | Pooja       | pooja@email.com  |
-| 7         | Aman        | aman@email.com   |
-+-----------+-------------+------------------+
++--------+-------------+----------+------------+
+| ClubID | ClubName    | ClubRoom | ClubMentor |
++--------+-------------+----------+------------+
+|      1 | Music Club  | R101     | Mr. Raman  |
+|      2 | Sports Club | R202     | Ms. Sita   |
++--------+-------------+----------+------------+
 ```
 SQL Command: `` SELECT * FROM Membership ORDER BY JoinDate; ``
 ```
 +-----------+--------+------------+
 | StudentID | ClubID | JoinDate   |
 +-----------+--------+------------+
-| 1         | 1      | 2024-10-01 |
-| 2         | 2      | 2024-12-01 |
-| 1         | 2      | 2024-01-15 |
-| 4         | 3      | 2024-01-18 |
-| 3         | 1      | 2024-01-20 |
-| 5         | 1      | 2024-01-22 |
-| 2         | 3      | 2024-01-25 |
-| 6         | 2      | 2024-01-27 |
-| 3         | 4      | 2024-01-28 |
-| 7         | 4      | 2024-01-30 |
+|         1 |      1 | 2024-01-10 |
+|         1 |      2 | 2024-01-15 |
+|         2 |      2 | 2024-01-12 |
 +-----------+--------+------------+
 ```
 
