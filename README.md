@@ -63,6 +63,16 @@ docker exec -it container mysql -u root -p070805 st4015cmd
 ```
 
 ## [?] Normalized 3NF Table
+Check for Table: `` SHOW TABLES; ``
+```
++---------------------+
+| Tables_in_st4015cmd |
++---------------------+
+| Club                |
+| Membership          |
+| Student             |
++---------------------+
+```
 SQL Command: `` SELECT * FROM Student; ``
 ```
 +-----------+-------------+------------------+
