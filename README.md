@@ -33,7 +33,7 @@ docker run -d --name container -v database:/var/lib/mysql -e MYSQL_ROOT_PASSWORD
 
 2. Import the database into the Container:
 ```bash
-docker exec -it container mysql -u root -p070805 -e "CREATE DATABASE IF NOT EXISTS st4015cmd;"
+docker exec -i container mysql -u root -p070805 -e "CREATE DATABASE IF NOT EXISTS st4015cmd;"
 docker exec -i container mysql -u root -p070805 st4015cmd < 3NF.sql
 ```
 
@@ -63,6 +63,7 @@ docker exec -it container mysql -u root -p070805 st4015cmd
 ```
 
 ## [?] Normalized 3NF Table
+Change Database: `` USE st4015cmd; ``
 Check for Table: `` SHOW TABLES; ``
 ```
 +---------------------+
