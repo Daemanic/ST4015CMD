@@ -25,19 +25,18 @@ cd ST4015CMD
 ---
 
 ## [?] Using Docker
-1. Run the following command to start MySQL instance:
+
+1. Creating Docker Container:
 ```bash
-docker run --name club-database -e MYSQL_ROOT_PASSWORD=clubdb -d mysql:latest
+docker run -d --name container -v database:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=070805 mysql:latest
 ```
 
-2. Import the database into the container:
-```bash
-docker cp 3NF.sql club-database:/3NF.sql
-```
+2. Import the database into the Container:
 
-3. Executing the SQL script:
+
+3. Executing the SQL Container:
 ```bash
-docker exec -it club-database mysql -u root -p
+docker exec -it container mysql -u root -p
 ```
 
 ---
