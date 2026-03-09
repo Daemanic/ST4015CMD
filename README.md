@@ -32,12 +32,12 @@ docker run --name club-database -e MYSQL_ROOT_PASSWORD=clubdb -d mysql:latest
 
 2. Import the database into the container:
 ```bash
-docker cp 3NF_club.sql club-database:/3NF_club.sql
+docker cp 3NF.sql club-database:/3NF.sql
 ```
 
 3. Executing the SQL script:
 ```bash
-docker exec -it club-database mysql -u root -p clubdb -e "source /3NF_club.sql"
+docker exec -it club-database mysql -u root -p clubdb -e "source /3NF.sql"
 ```
 
 ---
