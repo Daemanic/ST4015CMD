@@ -32,7 +32,9 @@ docker run -d --name container -v database:/var/lib/mysql -e MYSQL_ROOT_PASSWORD
 ```
 
 2. Import the database into the Container:
-
+```bash
+docker cp 3NF.sql container:/3NF.sql
+```
 
 3. Executing the SQL Container:
 ```bash
