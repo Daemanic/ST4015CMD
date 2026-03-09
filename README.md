@@ -37,7 +37,7 @@ docker cp 3NF.sql club-database:/3NF.sql
 
 3. Executing the SQL script:
 ```bash
-docker exec -it club-database mysql -u root -p clubdb -e "source /3NF.sql"
+docker exec -it club-database mysql -u root -p
 ```
 
 ---
